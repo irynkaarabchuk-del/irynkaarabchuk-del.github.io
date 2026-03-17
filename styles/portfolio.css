@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 .page-container {
-    display: flex; /*робить колонки однієї висоти автоматично*/
+    display: flex; /* використання flexbox для розташування блоків поруч */
 	max-width: 980px;
     margin: 30px auto;
     border: 5px solid grey;   /* рамка */
