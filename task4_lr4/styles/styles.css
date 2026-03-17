@@ -1,0 +1,36 @@
+.battery{
+    width:200px;
+    height:60px;
+    border:6px solid black;
+    margin:20px;
+    position:relative; /*для позиціонування елементів всередині батареї*/
+    background:#ffffff;
+}
+.battery::before{
+    content:"";
+    position:absolute;/*для позиціонування елемента відносно батареї*/
+    right:-14px;
+    top:18px;
+    width:12px;
+    height:24px;
+    background:black;
+}
+.battery::after{
+    content:"";
+    position:absolute;/*для позиціонування елемента відносно батареї*/
+    left:0;
+    top:0;
+    height:100%;
+}
+.low::after{
+    width:30%;
+    background:#ff1d25;
+}
+.medium::after{
+    width:65%;
+    background:#ffc20e;
+}
+.high::after{
+    width:100%;
+    background:#0aa34f;
+}
