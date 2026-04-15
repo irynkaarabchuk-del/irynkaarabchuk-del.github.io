@@ -1,0 +1,120 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    width: 900px;
+    margin: 50px auto;
+}
+
+/* ===== ПЕРША ТАБЛИЦЯ ===== */
+.card1 {
+    width: 280px;
+    float: left;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    border-bottom: 8px solid #1aa78a;
+    border-left: 2px solid #1aa78a;
+    border-right: 2px solid #1aa78a;
+}
+
+.card1 .header td {
+    background: #1abc9c;
+    color: white;
+    padding: 20px;
+}
+
+.card1 .content td {
+    padding: 20px;
+    color: #555;
+    border-top: 8px solid #1aa78a;
+}
+
+.card1 .footer td {
+    padding: 20px;
+}
+
+.card1 button {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+/* ===== ДРУГА ТАБЛИЦЯ ===== */
+.card2 {
+    width: 280px;
+    float: left;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    border-bottom: 8px solid #ce8611;
+    border-left: 2px solid #ce8611;
+    border-right: 2px solid #ce8611;
+}
+
+.card2 .header td {
+    background: #f39c12;
+    color: white;
+    padding: 20px;
+}
+
+.card2 .content td {
+    padding: 20px;
+    color: #555;
+    border-top: 8px solid #ce8611;
+}
+
+.card2 .footer td {
+    padding: 20px;
+}
+
+.card2 button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+/* ===== ТРЕТЯ ТАБЛИЦЯ ===== */
+.card3 {
+    width: 280px;
+    float: left;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+    border-bottom: 8px solid #cc4535;
+    border-left: 2px solid #cc4535;
+    border-right: 2px solid #cc4535;
+}
+
+.card3 .header td {
+    background: #e74c3c;
+    color: white;
+    padding: 20px;
+}
+
+.card3 .content td {
+    padding: 20px;
+    color: #555;
+    border-top: 8px solid #cc4535;
+}
+
+.card3 .footer td {
+    padding: 20px;
+}
+
+.card3 button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}

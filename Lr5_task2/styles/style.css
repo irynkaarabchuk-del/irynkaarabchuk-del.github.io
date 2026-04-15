@@ -1,0 +1,74 @@
+th.title1 {
+    background-color: #00c000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+table {
+    width: 600px;
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+th {
+    font-weight: normal;
+}
+th, td {
+    border: 2px solid black;
+    padding: 2px;
+    text-align: left;
+}
+
+/* Непарні стовпці */
+tr:not(:first-child) td:nth-child(odd),
+tr:not(:first-child) th:nth-child(odd) {
+    background-color: #c8e6c9;
+}
+
+tr:not(:first-child) td:nth-child(even),
+tr:not(:first-child) th:nth-child(even) {
+    background-color: #a5d6a7;
+}
+
+
+
+.table {
+    border: 1px solid black;
+    width: 600px;
+    margin-top: 20px;
+}
+.title {
+    border: 1px solid black;
+    background-color: #0ac413;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 75px; 
+    float: left;
+    padding: 2px;
+    text-align: left;
+}
+.header .cell {
+    font-weight: normal;
+    background-color: #a5d6a7;
+}
+
+/* ЧЕРГУВАННЯ СТОВПЦІВ */
+.cell:nth-child(odd) {
+    background-color: #c8e6c9;
+}   
+.cell:nth-child(even) {
+    background-color: #a5d6a7;
+}
+.cell:last-child{
+    width: 191px;
+}
