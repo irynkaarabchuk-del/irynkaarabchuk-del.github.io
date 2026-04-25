@@ -1,0 +1,129 @@
+body {
+    font-family:Arial;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+.wrap {
+    display:flex;
+    position: relative;
+    width: 1205px;
+    height: 550px;
+    border: 2px solid rgb(208, 205, 205);
+    margin: 0 auto;
+}
+.components {
+    display:inline-block;
+    width: 300px;
+    height: 550px;
+    border-right: 2px solid rgb(208, 205, 205);
+    padding-bottom: 8px;
+}
+.category {
+    width: 300px;
+    height: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(164, 161, 161);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.line {
+    width: 80%;
+    height: 1px;
+    background: rgb(208, 205, 205);
+    margin: 0 auto;
+}
+.name {
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    color:rgb(0, 82, 176);
+    text-align: center;
+
+}
+.image {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    padding-bottom: 30px; 
+}
+
+.price {
+    text-transform: uppercase;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+s {
+    font-size: small;
+    padding-right: 5px;
+}
+.button {
+    width: 150px;
+    height: 55px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button.not {
+    background-color: rgb(219, 4, 183);
+    color: rgb(255, 255, 255);
+}
+.button.yes {
+    background-color: rgb(247, 194, 49);
+}
+.swipe {
+    position: absolute;
+    top: 80px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(164, 161, 161);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(164, 161, 161);;
+}
+.swipe_left {
+    left: -20px;
+}
+.swipe_right {
+    right: -20px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;      /* вертикально */
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    font-size: 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.new{
+    left: 200px;
+    background-color: rgb(10, 168, 10);
+}
+.hit {
+    right: 15px;
+    background-color: rgb(0, 94, 255);
+}
+.hit2 {
+    right: 320px;
+    background-color: rgb(0, 94, 255);
+}
+
