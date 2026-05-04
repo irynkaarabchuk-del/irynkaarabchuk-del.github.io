@@ -6,25 +6,228 @@
 
 
 /* General */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(58, 58, 58);
+    background-image: url("../img/bg.png");
+    color: white;
+}
 
+a{
+    text-decoration: none;  
+    text-transform: uppercase;
+    color: white;          
+}
 
+.button{
+    background: linear-gradient(red, rgb(199, 62, 62));
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;  
+    padding: 10px;
+    text-align: center; 
+}
 
 /* Header */
 
+header{
+    background-image: url("../img/bg-01.jpg");
+    height: 400px;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    padding-top: 1px;   
+    text-align: center;
+}
+
+
+header h1{
+    font-size: 100px;
+    margin-top: 100px;
+    font-family: Metal Mania, Cochin, Georgia, 'Times New Roman', serif;
+}
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.menu li{
+    padding-left: 40px;
+    
+}
+
+.menu li:first-child{
+    margin-left: 200px;   
+    padding: 20px;
+    background: linear-gradient(red, rgb(199, 62, 62));             
+}
+
+.menu a{
+    padding: 20px;    
+}
+
+
+header .button {
+    margin-top: 30px;
+    width: 250px;
+    padding: 20px;
+}
 
 
 /* Tour */
 
+.container h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 40px 0;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;    
+}
 
+#tour .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+}
+
+
+.tour-card{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tour-card .tour-town, .tour-place, .tour-date{
+    position: relative;
+    font-weight: lighter;
+    margin-left: 20px;
+    
+}
+
+.tour-card .tour-town{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.tour-card .tour-date{
+    font-style: italic;
+}
+
+.tour-card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+#tour .button{
+    position: absolute;
+    width: 100px;
+    bottom: 45px;
+}
+
+.madrid{
+    background-image: url(../img/tour/madrid.jpg);
+    background-size: cover;
+    
+}
+
+.turin{
+    background-image: url(../img/tour/turin.jpg);
+    background-size: cover;
+}
+
+.hamburg{
+    background-image: url(../img/tour/hamburg.jpg);
+    background-size: cover;
+}
+
+.krakow{
+    background-image: url(../img/tour/krakow.jpg);
+    background-size: cover;
+}
 
 /* Gallery */
 
+#gallery .container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    justify-content: center;       
+    margin-bottom: 30px;
+}
+
+figure.photo img{
+    height: 320px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);        
+}
+
+.photo{
+    margin: 0 auto;    
+    padding: 10px;
+}
 
 
 /* Subscribe */
 
+#subscribe{
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-image: url(../img/bg-02.jpg);
+    background-size: cover;
+}
 
+#subscribe h2{
+    padding-top: 30px;
+}
+
+#subscribe p{
+    padding: 10px;
+}
+
+input, button{
+    padding: 20px;
+    width: 220px;
+    font-size: 20px;
+}
+
+button{
+    background-color: red;
+}
 
 /* Footer */
 
+footer{
+    height: 200px;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+}
 
+.social{
+    font-size: 30px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
