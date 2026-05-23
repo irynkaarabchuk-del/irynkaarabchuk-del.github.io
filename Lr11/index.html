@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexible Form Template</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+  <div class="form-wrapper">
+    <form class="form-card" action="#" method="post">
+
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter username"/>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password"/>
+        <span class="hint">Your password is between 8 and 14 characters</span>
+      </div>
+
+      <div class="form-group">
+        <label>Input field label</label>
+        <input type="text" name="field_error" class="input-error" value="Typing 1"/>
+        <span class="error-msg">Error message informing about a problem</span>
+      </div>
+
+      <div class="form-group">
+        <label class="checkbox-wrap">
+          <input type="checkbox" name="remember"/>
+          <span class="checkbox-box"></span>
+          <span class="checkbox-label">Remember me</span>
+        </label>
+      </div>
+
+      <div class="form-group toggle-group">
+        <label class="toggle">
+          <input type="checkbox" name="toggle_main"/>
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+        </label>
+        <span class="toggle-text">Off</span>
+      </div>
+
+      <div class="form-group">
+        <label class="radio-wrap">
+          <input type="radio" name="choice" value="1"/>
+          <span class="radio-dot"></span>
+          <span class="radio-label">Radio selection 1</span>
+        </label>
+        <label class="radio-wrap">
+          <input type="radio" name="choice" value="2" checked/>
+          <span class="radio-dot"></span>
+          <span class="radio-label">Radio selection 2</span>
+        </label>
+        <label class="radio-wrap">
+          <input type="radio" name="choice" value="3"/>
+          <span class="radio-dot"></span>
+          <span class="radio-label">Radio selection 3</span>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>Dropdown title</label>
+        <div class="dropdown">
+          <div class="dropdown-header">
+            Dropdown option
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 5L5 1L9 5" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="dropdown-item selected">Dropdown option</div>
+          <div class="dropdown-item">Dropdown option 1</div>
+          <div class="dropdown-item">Dropdown option 2</div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button type="reset" class="btn btn-ghost">Cancel</button>
+        <button type="submit" class="btn btn-primary">Next</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>

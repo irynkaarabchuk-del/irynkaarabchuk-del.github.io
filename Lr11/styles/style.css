@@ -1,0 +1,220 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-size: 14px;
+  background-color: #e6e6f8;
+  color: #1a1a2e;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.form-card {
+  background: #fff;
+  padding: 50px;
+  width: 500px;
+  height: fit-content;
+}
+
+.form-group { margin-bottom: 16px; }
+
+label {
+  display: block;
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  border: 1.5px solid #d0d0e0;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #1a1a2e;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus { border-color: #7c5cfc; background: #fff; }
+
+input.input-error { border-color: #e53e3e; background: #fff5f5; }
+
+.hint { display: block; font-size: 11px; color: #aaa; margin-top: 3px; }
+.error-msg { display: block; font-size: 11px; color: #e53e3e; margin-top: 3px; }
+
+/* Dropdown */
+.dropdown {
+  border: 1.5px solid #7c5cfc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #1a1a2e;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #1a1a2e;
+  border-top: 1px solid #f0f0f0;
+}
+
+.dropdown-item:hover { background: #ede9ff; }
+.dropdown-item.selected { background: #7c5cfc; color: #fff; }
+
+/* Checkbox */
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox-wrap input[type="checkbox"] { display: none; }
+
+.checkbox-box {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d0d0e0;
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.checkbox-wrap input[type="checkbox"]:checked + .checkbox-box {
+  background: #7c5cfc;
+  border-color: #7c5cfc;
+}
+
+.checkbox-wrap input[type="checkbox"]:checked + .checkbox-box::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.checkbox-label { font-size: 13px; color: #1a1a2e; }
+
+/* Toggle */
+.toggle-group { display: flex; align-items: center; gap: 10px; }
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.toggle input[type="checkbox"] { display: none; }
+
+.toggle-track {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #d0d0e0;
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.toggle input[type="checkbox"]:checked + .toggle-track { background: #7c5cfc; }
+
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.toggle input[type="checkbox"]:checked + .toggle-track .toggle-thumb {
+  transform: translateX(18px);
+}
+
+.toggle-text { font-size: 13px; color: #888; }
+
+/* Radio */
+.radio-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.radio-wrap:last-child { margin-bottom: 0; }
+.radio-wrap input[type="radio"] { display: none; }
+
+.radio-dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d0d0e0;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-wrap input[type="radio"]:checked + .radio-dot { border-color: #7c5cfc; }
+
+.radio-wrap input[type="radio"]:checked + .radio-dot::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7c5cfc;
+}
+
+.radio-label { font-size: 13px; color: #1a1a2e; }
+
+/* Кнопки */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 8px 32px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s;
+}
+
+.btn-ghost { background: #fff; border: 1.5px solid #d0d0e0; color: #7c5cfc; }
+.btn-ghost:hover { background: #f5f5f5; }
+.btn-primary { background: #7c5cfc; color: #fff; }
+.btn-primary:hover { background: #6a4de0; }
