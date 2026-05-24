@@ -120,6 +120,7 @@ header h2 a {
 .services-item {
     width: 100%;
     max-width: 400px;
+    margin: 0 auto;
 }
 
 .services-item p {
